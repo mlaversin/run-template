@@ -66,7 +66,7 @@ footer a:hover {
 }
 
 .section-1,
-.section-3,
+.section-2,
 .contact {
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.08);
 }
@@ -195,4 +195,34 @@ footer a {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+}
+
+/* ***************** Media queries ******************** */
+
+@media screen and (max-width: 650px) {
+  main,
+  .section-1,
+  .section-2 {
+    display: block;
+  }
+  main {
+    height: auto;
+  }
+  main .img-banner {
+    height: 50vh;
+    margin-top: 30px;
+  }
+  .container {
+    padding: 15px;
+  }
+  footer ul {
+    min-width: 200px;
+  }
+  footer a {
+    width: 24px;
+    height: 24px;
+  }
+  footer i {
+    font-size: 0.7rem;
+  }
 }
